@@ -17,12 +17,16 @@ jobs:
           submodules: recursive
           token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Debug payload
+        run: |
+          echo "Received payload:"
+          echo "${{ toJson(github.event.client_payload) }}"
+
       - name: Update the triggered submodule
         run: |
           SUBMODULE="${{ github.event.client_payload.name }}"
           echo "Updating submodule: $SUBMODULE"
 
-          # Fetch latest commit for this submodule
           git submodule update --remote $SUBMODULE
 
           git config user.name "github-actions[bot]"

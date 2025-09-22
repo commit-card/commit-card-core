@@ -1,6 +1,6 @@
-[submodule "github-core/commit-card-github-tools"]
-	path = github-core/commit-card-github-tools
+[submodule "github_core/commit_card_github_tools"]
+	path = github_core/commit_card_github_tools
 	url = https://github.com/commit-card/commit-card-github-tools.git
-[submodule "linkedin-core/commit-card-linkedin-tools"]
-	path = linkedin-core/commit-card-linkedin-tools
+[submodule "linkedin_core/commit_card_linkedin_tools"]
+	path = linkedin_core/commit_card_linkedin_tools
 	url = https://github.com/commit-card/commit-card-linkedin-tools.git
